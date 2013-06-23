@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+
+	
+<title>Why come to The Chronicle?</title>
+
+	<script type='text/javascript' id='lt_ws' src='http://localhost:8833/socket.io/lighttable/ws.js'></script>
+
+
+	<link rel="stylesheet" type="text/css" href="squares.css"/>
+  <link rel="stylesheet" type="text/css" href="reveal.css">
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+
+  <script type="text/javascript" src="js/jquery.reveal.js"></script>
+	<script src="js/jquery-tabslideout.v1.3.js"></script>
+	<script src="js/jquery-ns.min.js"></script>
+
+  <script>
+	$(function(){
+
+        $('.modal').click(function(e) {
+            $("#myModal").reveal();
+        });
+	$('.slide-out-div').tabSlideOut({
+		tabHandle: '.handle', //class of the element that will be your tab
+	    pathToTabImage: '../img/tab-projects-44x150-100.png', //path to the image for the tab
+	    imageHeight: '150px',   //height of tab image
+	    imageWidth: '44px',  //width of tab image
+	    tabLocation: 'left',  //side of screen where tab lives, top, right, bottom, or left
+	    speed: 300, //speed of animation
+	    action: 'click', //options: 'click' or 'hover', action to trigger animation
+	    topPos: null,  //position from the top
+	    fixedPosition: true,  //options: true makes it stick(fixed position) on scroll
+	    onLoadSlideOut: true
+	});
+	});
+	
+	$(document).ready(
+		function() {
+			nice = $("#scroll").niceScroll({cursorcolor:"#333",cursorborder: "",touchbehavior:true,cursorwidth:"5px"});
+			nice2 =$("#viewportdiv").niceScroll("#scroll2",{cursorcolor:"#333",cursorborder: "",touchbehavior:true, cursorwidth:"5px"});
+		}
+	);
+
+      //alert ("go");
+    //var json = '{"result":true,"count":1}';
+
+
+
+    var myString = 'secondfont">\n\nReporters';
+
+    myString =  encodeURIComponent( myString );
+
+    //'<h5 class="mainpad secondfont">Reporters</h5>';
+    //'<ul class="list">'
+    ///'<li>'
+    //'<a href="#" class="user blank">'
+    ///'<img src="img/unknown.jpg" height="50" width="50">'
+    //'<span class="title">First Last</span>'
+    //'<span class="subtitle">subtitle text</span></a>'
+    //'</li>'
+    //'</ul>';
+
+
+
+
+
+    //var myString = "Very good \\n This is some <br> \\n HTML.";
+
+    var json = '{"result":true,"count":1,"data":"'+myString+'"}';
+
+    obj = JSON && JSON.parse(json) || $.parseJSON(json);
+
+    //alert ("data before:"+obj.data);
+    //obj.data = '<div id="someId">';
+    //alert ("data after:"+obj.data);
+
+
+    //alert ("hi: "+ decodeURIComponent(obj.data));
+
+	</script>
+	<script type="text/javascript" src="js/jq.is.min.js"></script>
+	</head>
+<body>
+
+<div id="myModal" class="reveal-modal xlarge">
+    <h1>How America Gives (2012)</h1>
+    <img src="hag.png">
+    <div style="float: right; width: 240px; top: 20px;">How America Gives is based on exact dollar amounts released by the Internal Revenue Service showing the value of charitable deductions claimed by American taxpayers.
+
+        To provide a fair analysis, The Chronicle's rankings show the percentage of their income that households donated from the money they had left after paying their taxes and covering housing, food and other essential expenses.</div>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<!-- this should be generated from json logic -->
+<div data-load="json-location" id="container">
+  <div class="item red scales"></div>
+  <div class="item blue scales"></div>
+  <div class="item green scales"></div>sdfsdfsd
+  <div class="item yellow scales"></div>
+  <div class="item red"></div>
+  <div class="item blue" id="project1"></div>
+  <div class="item green" id="project2"></div>
+  <div class="item yellow" id="project3"></div>
+  <div class="item red" id="project4"></div>
+  <div class="item blue"></div>
+  <div class="item green"></div>
+  <div class="item yellow"></div>
+  <div class="item red"></div>
+  <div class="item blue"></div>
+  <div class="item green"></div>
+  <div class="item yellow"></div>
+  <div class="item red"></div>
+  <div class="item blue"></div>
+  <div class="item green"></div>
+  <div class="item yellow"></div>
+  <div class="item yellow"></div>
+  <div class="item red"></div>
+  <div class="item blue"></div>
+  <div class="item green"></div>
+  <div class="item yellow"></div>
+  <div class="item red"></div>
+  <div class="item blue"></div>
+  <div class="item green"></div>
+  
+</div>
+
+<div class="stationary-topbar" id="topbar">
+
+    <div id="logo" class="left">
+       <div class="mainfont">THE CHRONICLE</div>
+       <div class="minifont">of Higher Education</div>
+    </div>
+
+    <h4 class="thirdfont" style="margin: 12px; text-align: center; overflow: hidden; white-space: nowrap;">Why The Chronicle? People love our mission.</h4>
+</div>
+
+<!-- This needs to be built dynamically (static main div) -->
+<div class="stationary-div tab2" id="tab2">
+
+
+
+	<div id="scroll" style="overflow: hidden; position: relative;">
+    <h5 class="mainpad secondfont">Technologists</h5>
+
+	<ul class="list">
+	<li>
+	 	<a href="#" class="user kc">
+	    <img src="img/unknown.jpg" height="50" width="50">
+		<span class="title">Kimler (KC) Corey</span>
+		<span class="subtitle">Studio Lead</span></a>
+	</li>
+	
+	<li>
+	 	<a href="#" class="user blank">
+	    <img src="img/unknown.jpg" height="50" width="50">
+		<span class="title">First Last</span>
+		<span class="subtitle">subtitle text</span></a>
+	</li>
+    </ul>
+
+
+
+
+        <h5 class="mainpad secondfont">Marketing</h5>
+        <ul class="list">
+<li>
+ 	<a href="#" class="user blank">
+    <img src="img/unknown.jpg" height="50" width="50">
+	<span class="title">First Last</span>
+	<span class="subtitle">subtitle text</span></a>
+</li>
+
+<li>
+ 	<a href="#" class="user blank">
+    <img src="img/unknown.jpg" height="50" width="50">
+	<span class="title">First Last</span>
+	<span class="subtitle">subtitle text</span></a>
+</li>
+
+<li>
+ 	<a href="#" class="user blank">
+    <img src="img/unknown.jpg" height="50" width="50">
+	<span class="title">First Last</span>
+	<span class="subtitle">subtitle text</span></a>
+</li>
+
+<li>
+ 	<a href="#" class="user blank">
+    <img src="img/unknown.jpg" height="50" width="50">
+	<span class="title">First Last</span>
+	<span class="subtitle">subtitle text</span></a>
+</li>	
+	
+	
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
+	
+	</ul>
+	</div>
+</div>
+<!-- end static main div -->
+
+
+
+
+<!-- This needs to be built dynamically -->
+<div class="slide-out-div tab">
+     <a class="handle">Content</a>
+     
+     <div style="background-color: #000; opacity:1; filter:alpha(opacity=100); padding-right:  10px;;"> 
+     
+     <img src="img/projects/kc.jpeg" id="user_img" style="float: right; margin-right:  10px; margin-bottom: 5px; margin-top: 20px; opacity:1;" class="img_bright">
+     <br>
+     <p style="font-size: 1.2em; line-height: 1.3em;" id="user_txt">
+
+     </p>
+     </div>
+     <!-- <h3 style="margin-left: 40px;">What Am I Doing?</h3> -->
+     
+     <div id="viewportdiv">
+     <div id="scroll2" style="overflow: hidden; position: relative;">
+     
+     <ul class="list">
+     <li style="height: 200px;">
+
+      	<a href="#" class="project blank modal" >
+     	<span class="title">How America Gives</span>
+
+     	<span class="subtitle">
+             <img src="hag_thm.png" width="150" height="100"><br>
+
+     	</span></a>
+     </li>
+     
+
+
+     
+     </ul>
+     
+     <!--
+     <div id="filters">
+       <input type="checkbox" name="red" value=".red" id="red"><label for="red">red</label>
+       <input type="checkbox" name="blue" value=".blue" id="blue"><label for="blue">blue</label>
+       <input type="checkbox" name="green" value=".green" id="green"><label for="green">green</label>
+       <input type="checkbox" name="yellow" value=".yellow" id="yellow"><label for="yellow">yellow</label>
+       <p><button id="shuffle">Shuffle</button></p>
+     </div>
+     -->
+     <br><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br>
+     </div> <!-- end scroll2 --> </div>
+     
+     
+      
+</div>
+
+
+
+
+
+
+<script>
+
+$(function(){
+
+statement = {};
+
+statement.show = function(name){
+ 	console.log ("calling show "+name );
+ 
+ 	if (name == 'kc'){
+ 	return 'I am at the Chronicle to "create with code". My personal mission is to "use technology to empower". Being at The Chronicle keeps me on the edge of technology and pushes me to keep learning. I can\'t imagine a better way to live!'; 
+ 	} else {
+ 	return 'I am here to make haste not waste. I enjoy delivery fast and delivery often. How great is it to work with all the brilliance that shines so brightly. If you worked here, you\'d be happy by now.';
+ 	}
+ };
+
+
+
+  
+  var $container = $('#container'),
+      $checkboxes = $('#filters input');
+  
+  $container.isotope({
+    itemSelector: '.item'
+  });
+  
+  $checkboxes.change(function(){
+    var filters = [];
+    // get checked checkboxes values
+    $checkboxes.filter(':checked').each(function(){
+      filters.push( this.value );
+    });
+    // ['.red', '.blue'] -> '.red, .blue'
+    filters = filters.join(', ');
+    $container.isotope({ filter: filters });
+  });
+    
+  $('#shuffle').click(function(){
+    $container.isotope('shuffle');
+  });
+  
+  $('.project').click(function(){
+  	  //get the classes from the project item clicked 
+  	  var el = $(this).attr('class'); 
+  	  
+  	  var el_array = el.split(" ");
+  	  //remove project
+  	   var index = el_array.indexOf('project');
+  	   if(index!=-1){
+  	     el_array.splice(index, 1);
+  	   }
+      //
+
+      //
+  	  console.log("boom"+el_array);
+  });
+
+
+
+  
+  
+  $('.user').click(function(){
+  	  var e = $(this).attr('class');
+  		var e_array = e.split(" ");
+  		//remove project
+  		 var index = e_array.indexOf('user');
+  		 if(index!=-1){
+  		   e_array.splice(index, 1);
+  		 }
+  		
+  		 e=e_array[0];
+  	  
+  
+  
+   		 
+  		 //if it is closed then open it
+  		 if ($('.handle').parent().attr('class') === 'slide-out-div tab'){
+  		 	  		 	
+  		 	$('.handle').click(); //open
+
+//paint new image
+document.getElementById("user_img").src='http://geekvee.com/img/projects/'+e+'.jpeg';
+//paint new text
+document.getElementById("user_txt").innerHTML = statement.show(e); 
+
+  		 } else {
+  		 // at least open or close it
+  		 	$('.handle').click(); //close
+  		 	$container.isotope('shuffle'); 
+
+			
+			
+
+  		 
+  		 $('.handle').click(); //open
+  		 
+  		 //paint new image
+  		 document.getElementById("user_img").src='http://geekvee.com/img/projects/'+e+'.jpeg';
+  		 //paint new text
+  		 document.getElementById("user_txt").innerHTML = statement.show(e);  
+
+  		 
+  		 //console.log($('.handle').parent().attr('class'));
+  		 
+  		 }
+  		 
+    //$container.isotope('shuffle');
+  });
+  
+  
+    
+  /*
+  
+  For POC just going to use HTML in div- must add dynamic loader of information later
+  var tab1Data=[
+  		"unknown.jpg!!bigPhotoKC.jpg!!Kimler (KC) Corey!!kc",
+  		"unknown.jpg!!unknownBig.jpg!!First Last Name!!unknown1",
+  		"unknown.jpg!!unknownBig.jpg!!First Last Name!!unknown2",
+  		"unknown.jpg!!unknownBig.jpg!!First Last Name!!unknown3",
+  		"unknown.jpg!!unknownBig.jpg!!First Last Name!!unknown4",
+  		"unknown.jpg!!unknownBig.jpg!!First Last Name!!unknown5",
+  		"unknown.jpg!!unknownBig.jpg!!First Last Name!!unknown6",
+  		"unknown.jpg!!unknownBig.jpg!!First Last Name!!unknown7",
+  		"unknown.jpg!!unknownBig.jpg!!First Last Name!!unknown8",
+  		"unknown.jpg!!unknownBig.jpg!!First Last Name!!unknown9"
+  ];
+  
+  var listContainer = document.createElement("div");
+  document.getElementById("tab2").appendChild(listContainer);
+   var listElement = document.createElement("ul");
+    listContainer.appendChild(listElement);
+     var numberOfListItems = tab1Data.length;
+    
+                                    for( var i =  0 ; i < numberOfListItems ; ++i){
+                   
+                                            // create a <li> for each one.
+                                            var listItem = document.createElement("li");
+    
+                                            // add the item text
+                                            listItem.innerHTML = tab1Data[i];
+    
+                                            // add listItem to the listElement
+                                            listElement.appendChild(listItem);
+    
+                                    }
+    
+*/    
+    
+    
+    
+ });
+
+
+//for each clicked item
+$(".item").click(function() {
+
+//console.log("Size of that item: "+$(this).width());
+
+if ($(this).width()=='170'){
+
+    $("#myModal").reveal();
+
+//    $(this).animate({
+//        width: '345',
+//        height: '345'
+//    }, 500, function(){ $('#container').isotope('reLayout');});
+}else {
+	$(this).animate({
+    	width: '170',
+    	height: '170'
+	}, 500, function(){ $('#container').isotope('reLayout');});
+}    
+    
+    
+});
+
+</script>
+
+
+ 
+
+</body>
+<html>
